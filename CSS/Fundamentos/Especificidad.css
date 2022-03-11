@@ -1,0 +1,26 @@
+/* Los fundamentos de hoja de estilo cascada van de abajo para arriba,
+sim embargo la especificidad no requiere un orden, ya que selelecionas un elemento
+en concreto para aplicar estilos */
+
+p.texto-clase#texto-id { /* Nivel de Especificidad: (1,1,1) con !important */
+    color: #cb3 !important; /*? "!Important" es una palabra clave para ser MUCHISIMOS mas especificos*/
+} 
+p.texto-clase#texto-id {  /* Nivel de Especificidad: (1,1,1) */
+    color: #4f45;
+}
+#texto-id { /* Nivel de Especificidad: (1,0,0) */
+    color: #a5a5a5;
+}
+
+/** Una buena practica en css, es no ser tan especifico apartir de las 3 */
+/** de arriba se es muy especifico, las 3 de abajo son buenas practicas  */
+
+.textos { /* Nivel de Especificidad: (0,1,0) */
+    color: #15443c;
+}
+p { /* Nivel de Especificidad: (0,0,1)*/
+    color: #3299;
+}
+body { /* Nivel de Especificidad: (0,0,1) */
+    color: #622;
+}

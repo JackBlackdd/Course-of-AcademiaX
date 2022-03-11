@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-size: larger;
+        color: black;
+      }
+      .contenedor {
+        height: 100px;
+        background: rgb(230, 120, 76);
+        display: flex;
+        flex-direction: row;  /* Sirve para definir la orientacion de los elementos*/
+        justify-content: space-between;  /* Define com seran los espacion entre elementos*/
+        align-items: center; /* Sirve para definir la orientacion en el eje x de los elementos*/
+
+        /* Pagina responsiva */
+
+        flex-wrap: wrap;
+
+      }
+      .contenedor div {
+        width: 40px;
+        height: 70px;
+      }
+      #contenedor1 {
+        background-color: aqua;
+      }
+      #contenedor2 {
+        background: rebeccapurple;
+      }
+      #contenedor3 {
+        background: red;
+      }
+      #contenedor4 {
+        background: wheat;
+      }
+      #contenedor5 {
+        background: cadetblue;
+      }
+      #contenedor6 {
+        background: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <h3> Esto es un ejemplo de flexbox</h1>
+    <span>2 propiedades</span>
+    <div class="contenedor">     
+      <div id="contenedor1"></div>
+      <div id="contenedor2"></div>
+      <div id="contenedor3"></div>
+      <div id="contenedor4"></div>
+      <div id="contenedor5"></div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <div id="contenedor6"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Selectores</title>
+    <style>
+        * { /* Selector * selecciona todos los elementos */
+          text-shadow: 0cm 0px 15px;
+      }
+      p { /* Selector "etiqueta" selecciona todas las 
+            etiquetas de un tipo */
+        color: aquamarine;
+        font-size: large;
+      }
+      p.clase-texto { /* Selector "etiqueta"."clase" 
+                        Selecciona todas las etiquetas
+                        con la clase indicada*/
+          color: chartreuse;
+      }
+      #texto-unico { /* Selector #id Seleciona*/
+          color: brown;
+          font-size: larger;
+      }
+      span { /* Selector "etiqueta" especifica elementos
+                de una etiqueta dentro de otra etiqueta
+                sin problemas */
+          color: azure;
+      }
+      .clase-texto span { /* Selector ."clase" "etiqueta" 
+                especifica el hijo de un clase */
+          color: aqua;
+      }
+      p, span { /* Selector "etiqueta", "etiqueta"
+                    especifica un grupo de etiquetas */
+          text-decoration: underline;
+      } 
+      p[title] { /* Selector "etiqueta"[atributo] especifica
+                    la etiqueta que contenga el atributo
+                    mencionado y selecciona */
+          color: white
+      }
+      button:hover { /*  selecciona el botón cuando el 
+                        cursor está sobre el botón */
+          color: darkblue;
+          box-shadow: 0px 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Texto <span>1</span></p>
+    <p class="clase-texto">Texto de la clase <span>2</span></p>
+    <p class="clase-texto">Texto de la clase <span>3</span></p>
+    <p id="texto-unico">Texto de un id <span>4</span></p>
+    <p title="Texto5">Texto con un `title` <span>6</span></p>
+    <button>Soy un boton</button>
+    <div>Hola, soy un div</div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!-- EL enfoque en moviles primero nos pone en prioridad de los moviles-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        /* Removes el espacio */
+        font-size: 0;
+      }
+      div {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+      }
+      /* Con @media asignamos una resolucion difente a la resolucion de 500px */
+      @media screen and (min-width: 500px) {
+        div {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background: rgb(255, 255, 255)"></div>
+    <div style="background: rgb(0, 255, 255)"></div>
+    <div style="background: rgb(255, 0, 255)"></div>
+    <div style="background: rgb(255, 255, 0)"></div>
+    <div style="background: rgb(0, 0, 255)"></div>
+  </body>
+</html>
+
+<!-- El codigo es el mismo, sin embargo, las prioridad fue para resoluciones de pantalla mas pequeñas -->
