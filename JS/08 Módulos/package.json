@@ -1,0 +1,12 @@
+{
+  "name": "08-modulos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "export.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xavier Reyes Ochoa <xareyesochoa@gmail.com> (http://www.xaviro.com)",
+  "license": "MIT",
+  "type": "module"
+}
