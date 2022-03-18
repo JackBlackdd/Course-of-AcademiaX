@@ -50,3 +50,138 @@ JS/Archive/09 Asincroni╠üa/setInterval.js
 JS/Archive/09 Asincroni╠üa/setTimeout.js
 JS/Archive/10 Complementos/Coercio╠ün.js
 JS/Archive/10 Complementos/Errores.js
+HTML/Archive/01 Primeros Pasos/.DS_Store
+HTML/Archive/01 Primeros Pasos/Hola Mundo.html
+HTML/Archive/01 Primeros Pasos/Partes.html
+HTML/Archive/02 Texto/Citas.html
+HTML/Archive/02 Texto/Encabezados.html
+HTML/Archive/02 Texto/Formatos.html
+HTML/Archive/02 Texto/Listas.html
+HTML/Archive/02 Texto/Texto.html
+HTML/Archive/02 Texto/Tiempo.html
+HTML/Archive/03 Navegacio╠ün/about.html
+HTML/Archive/03 Navegacio╠ün/blog.html
+HTML/Archive/03 Navegacio╠ün/Navegacio╠ün.html
+HTML/Archive/03 Navegacio╠ün/Vi╠ünculos.html
+HTML/Archive/04 Ima╠ügenes/arches-300.jpg
+HTML/Archive/04 Ima╠ügenes/arches-600.jpg
+HTML/Archive/04 Ima╠ügenes/arches-1200.jpg
+HTML/Archive/04 Ima╠ügenes/arches.jpeg
+HTML/Archive/04 Ima╠ügenes/figure.html
+HTML/Archive/04 Ima╠ügenes/html.svg
+HTML/Archive/04 Ima╠ügenes/Imagen.html
+HTML/Archive/04 Ima╠ügenes/pi.gif
+HTML/Archive/04 Ima╠ügenes/picture.html
+HTML/Archive/05 Media/audio.html
+HTML/Archive/05 Media/audio.mp3
+HTML/Archive/05 Media/audio.ogg
+HTML/Archive/05 Media/iframe.html
+HTML/Archive/05 Media/video.html
+HTML/Archive/06 Contenido/Accesiblidad.html
+HTML/Archive/06 Contenido/Atributos Globales.html
+HTML/Archive/06 Contenido/Contenedores.html
+HTML/Archive/06 Contenido/Lenguaje.html
+HTML/Archive/07 Estructura/Body.html
+HTML/Archive/07 Estructura/Head.html
+HTML/Archive/07 Estructura/Html.html
+HTML/Archive/07 Estructura/index.html
+HTML/Archive/08 Formularios/fieldset.html
+HTML/Archive/08 Formularios/form.html
+HTML/Archive/08 Formularios/input.html
+HTML/Archive/08 Formularios/textarea.html
+HTML/Archive/09 Tablas/table.html
+HTML/Archive/10 Complementos/Depuracio╠ün.html
+CSS/css - ignore/._.DS_Store
+CSS/css - ignore/.DS_Store
+CSS/css - ignore/index.html
+CSS/css - ignore/.vscode/settings.json
+CSS/css - ignore/assets/._.DS_Store
+CSS/css - ignore/assets/.DS_Store
+CSS/css - ignore/assets/css/contact.css
+CSS/css - ignore/assets/css/experience.css
+CSS/css - ignore/assets/css/fonts.css
+CSS/css - ignore/assets/css/header.css
+CSS/css - ignore/assets/css/main.css
+CSS/css - ignore/assets/css/nav.css
+CSS/css - ignore/assets/css/portfolio.css
+CSS/css - ignore/assets/css/sections.css
+CSS/css - ignore/assets/css/skillset.css
+CSS/css - ignore/assets/css/utils.css
+CSS/css - ignore/assets/img/._.DS_Store
+CSS/css - ignore/assets/img/.DS_Store
+CSS/css - ignore/assets/img/experience/._.DS_Store
+CSS/css - ignore/assets/img/experience/._1.svg
+CSS/css - ignore/assets/img/experience/._2.svg
+CSS/css - ignore/assets/img/experience/._3.svg
+CSS/css - ignore/assets/img/experience/._4.svg
+CSS/css - ignore/assets/img/experience/._5.svg
+CSS/css - ignore/assets/img/experience/.DS_Store
+CSS/css - ignore/assets/img/experience/1.svg
+CSS/css - ignore/assets/img/experience/2.svg
+CSS/css - ignore/assets/img/experience/3.svg
+CSS/css - ignore/assets/img/experience/4.svg
+CSS/css - ignore/assets/img/experience/5.svg
+CSS/css - ignore/assets/img/icons/._.DS_Store
+CSS/css - ignore/assets/img/icons/.DS_Store
+CSS/css - ignore/assets/img/icons/zoom.svg
+CSS/css - ignore/assets/img/logos/._large.png
+CSS/css - ignore/assets/img/logos/large.png
+CSS/css - ignore/assets/img/logos/small.png
+CSS/css - ignore/assets/img/portfolio/._.DS_Store
+CSS/css - ignore/assets/img/portfolio/._1.png
+CSS/css - ignore/assets/img/portfolio/._2.png
+CSS/css - ignore/assets/img/portfolio/._3.png
+CSS/css - ignore/assets/img/portfolio/.DS_Store
+CSS/css - ignore/assets/img/portfolio/1.png
+CSS/css - ignore/assets/img/portfolio/2.png
+CSS/css - ignore/assets/img/portfolio/3.png
+CSS/css - ignore/assets/img/skillset/._.DS_Store
+CSS/css - ignore/assets/img/skillset/.DS_Store
+CSS/css - ignore/assets/img/skillset/bash.svg
+CSS/css - ignore/assets/img/skillset/css.svg
+CSS/css - ignore/assets/img/skillset/git.svg
+CSS/css - ignore/assets/img/skillset/html.svg
+CSS/css - ignore/assets/img/skillset/js.svg
+CSS/css - ignore/assets/img/skillset/node.svg
+CSS/css - ignore/assets/img/skillset/npm.svg
+CSS/css - ignore/assets/img/skillset/react.svg
+CSS/css - ignore/assets/img/social/._.DS_Store
+CSS/css - ignore/assets/img/social/._github.png
+CSS/css - ignore/assets/img/social/._youtube.png
+CSS/css - ignore/assets/img/social/.DS_Store
+CSS/css - ignore/assets/img/social/github.png
+CSS/css - ignore/assets/img/social/linkedin.png
+CSS/css - ignore/assets/img/social/youtube.png
+CSS/css - ignore/assets/video/._.DS_Store
+CSS/css - ignore/assets/video/._hero.mp4
+CSS/css - ignore/assets/video/.DS_Store
+CSS/css - ignore/assets/video/hero.mp4
+CSS/archives - ignore/01 Primeros Pasos/.DS_Store
+CSS/archives - ignore/01 Primeros Pasos/Hola Mundo/.DS_Store
+CSS/archives - ignore/01 Primeros Pasos/Hola Mundo/index.html
+CSS/archives - ignore/01 Primeros Pasos/Resets/index.html
+CSS/archives - ignore/01 Primeros Pasos/Uso/index.html
+CSS/archives - ignore/01 Primeros Pasos/Uso/styles.css
+CSS/archives - ignore/02 Fundamentos/.DS_Store
+CSS/archives - ignore/02 Fundamentos/Cascada/index.html
+CSS/archives - ignore/02 Fundamentos/Cascada/styles.css
+CSS/archives - ignore/02 Fundamentos/Especificidad/index.html
+CSS/archives - ignore/02 Fundamentos/Selectores/index.html
+CSS/archives - ignore/02 Fundamentos/Sintaxis/index.html
+CSS/archives - ignore/02 Fundamentos/Unidades/index.html
+CSS/archives - ignore/03 Texto/Fuentes/index.html
+CSS/archives - ignore/04 Modelo de Caja/Borde/index.html
+CSS/archives - ignore/04 Modelo de Caja/Caja/index.html
+CSS/archives - ignore/04 Modelo de Caja/Contorno/index.html
+CSS/archives - ignore/04 Modelo de Caja/Margen y Relleno/index.html
+CSS/archives - ignore/05 Estilos/Color/index.html
+CSS/archives - ignore/05 Estilos/Fondo/index.html
+CSS/archives - ignore/06 Layouts/.DS_Store
+CSS/archives - ignore/06 Layouts/Flexbox/index.html
+CSS/archives - ignore/06 Layouts/Floats/index.html
+CSS/archives - ignore/06 Layouts/Grid/index.html
+CSS/archives - ignore/06 Layouts/Layouts/index.html
+CSS/archives - ignore/06 Layouts/Posiciones/index.html
+CSS/archives - ignore/06 Layouts/Prefijos/index.html
+CSS/archives - ignore/07 Disen╠âo Receptivo/Consultas de Medios/index.html
+CSS/archives - ignore/07 Disen╠âo Receptivo/Mo╠üvil Primero/index.html
