@@ -1,6 +1,6 @@
 // Object();
 
-const lista = new Array();
+const lista = new Array([]);
 // console.log(Object.prototype);
 
 class SuperArray extends Array {
