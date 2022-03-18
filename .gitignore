@@ -1,1 +1,52 @@
 Course-of-AcademiaX.code-workspace
+JS/Archive/01 Primeros Pasos/Comentarios.js
+JS/Archive/01 Primeros Pasos/Hola Mundo.js
+JS/Archive/02 Variables/Booleano.js
+JS/Archive/02 Variables/Lista.js
+JS/Archive/02 Variables/Me╠ütodos de Lista.js
+JS/Archive/02 Variables/Me╠ütodos de Texto.js
+JS/Archive/02 Variables/Nu╠ümero.js
+JS/Archive/02 Variables/Objeto.js
+JS/Archive/02 Variables/Regex.js
+JS/Archive/02 Variables/Texto.js
+JS/Archive/02 Variables/Tipos.js
+JS/Archive/02 Variables/Variables.js
+JS/Archive/03 Operadores/Operadores Aritme╠üticos.js
+JS/Archive/03 Operadores/Operadores Comparativos Nu╠ümeros.js
+JS/Archive/03 Operadores/Operadores Comparativos Texto.js
+JS/Archive/03 Operadores/Operadores Lo╠ügicos.js
+JS/Archive/04 Condicionales/15 Condicional if else.js
+JS/Archive/04 Condicionales/16 Condicional switch.js
+JS/Archive/04 Condicionales/17 Operador Ternario.js
+JS/Archive/05 Bucles/Bucle do...while.js
+JS/Archive/05 Bucles/Bucle for...in.js
+JS/Archive/05 Bucles/Bucle for...of.js
+JS/Archive/05 Bucles/Bucle for.js
+JS/Archive/05 Bucles/Bucle while.js
+JS/Archive/06 Funciones/A╠ümbito.js
+JS/Archive/06 Funciones/Callback.js
+JS/Archive/06 Funciones/Declaracio╠ün vs Expresio╠ün.js
+JS/Archive/06 Funciones/Funciones Flecha.js
+JS/Archive/06 Funciones/Funciones.js
+JS/Archive/06 Funciones/Me╠ütodos.js
+JS/Archive/06 Funciones/Retorno.js
+JS/Archive/07 POO/Clases.js
+JS/Archive/07 POO/Contexto.js
+JS/Archive/07 POO/Extender.js
+JS/Archive/07 POO/Herencia Prototi╠üpica.js
+JS/Archive/07 POO/Herencia.js
+JS/Archive/07 POO/Nuevo.js
+JS/Archive/07 POO/POO.js
+JS/Archive/07 POO/Prototipo.js
+JS/Archive/07 POO/Vinculacio╠ün.js
+JS/Archive/08 Mo╠üdulos/Exportar.js
+JS/Archive/08 Mo╠üdulos/Importar.js
+JS/Archive/08 Mo╠üdulos/package.json
+JS/Archive/09 Asincroni╠üa/async await.js
+JS/Archive/09 Asincroni╠üa/Fetch Web API.js
+JS/Archive/09 Asincroni╠üa/Multiples Promesas.js
+JS/Archive/09 Asincroni╠üa/Promesas.js
+JS/Archive/09 Asincroni╠üa/setInterval.js
+JS/Archive/09 Asincroni╠üa/setTimeout.js
+JS/Archive/10 Complementos/Coercio╠ün.js
+JS/Archive/10 Complementos/Errores.js
