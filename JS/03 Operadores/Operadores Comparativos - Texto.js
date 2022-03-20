@@ -8,3 +8,5 @@ console.log(a > b);
 
 console.log(a.toUpperCase() < b.toUpperCase());
 console.log(a.toUpperCase() > b.toUpperCase());
+
+console.log(!!"texto" == true);

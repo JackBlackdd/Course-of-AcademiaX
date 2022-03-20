@@ -1,6 +1,6 @@
 # Notas Masterclass JavaScript
 
-## JavaScript
+## Asincronia
 
 ### Variables
 
