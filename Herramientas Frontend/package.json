@@ -1,0 +1,22 @@
+{
+  "name": "course-of-academiax",
+  "version": "1.0.0",
+  "description": "Este es un paquete de prueba",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dioscelestial/Course-of-AcademiaX.git"
+  },
+  "author": "Jason Barcelo Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dioscelestial/Course-of-AcademiaX/issues"
+  },
+  "homepage": "https://github.com/Dioscelestial/Course-of-AcademiaX#readme"
+}
