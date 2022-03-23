@@ -23,7 +23,7 @@ textarea:focus {
 }
 
 textarea {
-    resize: none;
+    resize: none
 }
 
 form button {
@@ -34,17 +34,17 @@ form button {
     padding: 1rem;
     border-radius: 15px;
     cursor: pointer;
-    transition: background-color .3s ease
+    transition: background-color .3s ease;
 }
 
 form button:hover {
-    background-color: var(--secondary-dark);
+    background-color: var(--secondary-dark)
 }
 
 #social-media img {
     border-radius: 10rem;
     background-color: var(--white);
-    transition: all 0.3s ease;
+    transition: all ease .3s;
     margin: 1rem;
 }
 
