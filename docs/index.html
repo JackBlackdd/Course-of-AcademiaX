@@ -7,8 +7,11 @@
     <title>Jason Fernely Barceló Ortiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../CSS/Proyecto/Proyecto.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <!-- Ya no necesito esta cdn ya que ahora tengo la libreria localmente usando npm -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    /> -->
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <!-- Ahora utlizo esta de aqui arriba -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200&family=Montserrat&display=swap" />
@@ -34,7 +37,7 @@
         <source src="assets/video/hero.mp4" />
       </video>
     </header>
-    <nav id="navbar" class="open navbar-fixed">
+    <nav id="navbar" class=" navbar-fixed">
         <div>
             <a href="/">
                 <img class="circle" src="assets/img/logos/small.png" alt="small logo" />
@@ -158,5 +161,7 @@
         &copy;2021. All rights reserved;</small
       >
     </footer>
+    <script src="assets/js/fixed.js"></script>
+    <script src="assets/js/Hamburguesa.js"></script>
   </body>
 </html>
