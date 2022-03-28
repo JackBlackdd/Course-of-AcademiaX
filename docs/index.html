@@ -7,15 +7,21 @@
     <title>Jason Fernely Barceló Ortiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../CSS/Proyecto/Proyecto.css" />
-    <!-- Ya no necesito esta cdn ya que ahora tengo la libreria localmente usando npm -->
+    <!-- Ya no necesito este cdn ya que ahora tengo la libreria localmente usando npm -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     /> -->
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <!-- Libreria de css -->
+    <!-- 
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css" /> -->
+
     <!-- Ahora utlizo esta de aqui arriba -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200&family=Montserrat&display=swap" />
-    <link rel="stylesheet" href="assets/css/contact.css" />
+    <!-- Ya no usamos estos links de abajo ya que ahora podemos usar webpack y juntar todo en un index.css -->
+    <!-- <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css//experience.css" />
     <link rel="stylesheet" href="assets/css//fonts.css" />
     <link rel="stylesheet" href="assets/css//header.css" />
@@ -24,7 +30,7 @@
     <link rel="stylesheet" href="assets/css//portfolio.css" />
     <link rel="stylesheet" href="assets/css//sections.css" />
     <link rel="stylesheet" href="assets/css//skillset.css" />
-    <link rel="stylesheet" href="assets/css//utils.css" />
+    <link rel="stylesheet" href="assets/css//utils.css" /> -->
 </head>
 
 <body>
@@ -37,7 +43,7 @@
         <source src="assets/video/hero.mp4" />
       </video>
     </header>
-    <nav id="navbar" class=" navbar-fixed">
+    <nav id="navbar" class="navbar-fixed">
         <div>
             <a href="/">
                 <img class="circle" src="assets/img/logos/small.png" alt="small logo" />
@@ -110,7 +116,7 @@
             <h3>Experience</h3>
             <hr />
             <div>
-                <a>
+                <a data-modal-id="myModal">
                     <img src="assets/img/experience/1.png" alt="Experience 1" />
                     <h4>&copy;Jolly Coffee + breakfast</h4>
                 </a>
@@ -134,13 +140,13 @@
             <hr />
             <form action="https://formspree.io/f/xqknbvnr" method="POST">
                 <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
+          Your email:
+          <input type="email" name="email" />
+        </label>
                 <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
                 <!-- your other form fields go here -->
                 <button type="submit">Send</button>
             </form>
@@ -161,7 +167,29 @@
         &copy;2021. All rights reserved;</small
       >
     </footer>
-    <script src="assets/js/fixed.js"></script>
-    <script src="assets/js/Hamburguesa.js"></script>
+    <!-- Modal usando eins-modal -->
+    <div
+      id="myModal"
+      class="eins-modal eins-modal-sm"
+      data-options="openDuration: 300;"
+    >
+      <div class="eins-modal-content">
+        Este es el uso de un modal usando una libreria externa de npm
+
+        <br />
+        <button
+          style="display: inline-block"
+          class="eins-modal-close-button btn btn-success btn-pf"
+        >
+          OK
+        </button>
+      </div>
+    </div>
+    <!-- Ya no son necesarios estos archivos ya que usamos 'webpack'
+      <script src="assets/js/fixed.js"></script>
+    <script src="assets/js/hamburguesa.js"></script> 
+
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script> 
+      Libreria npm de JS -->
   </body>
 </html>

@@ -1,25 +1,35 @@
 {
-    "name": "course-of-academiax",
+    "name": "docs",
     "version": "1.0.0",
-    "description": "Este es un paquete de prueba",
+    "description": "Segundo Intento de Packet",
     "main": "index.html",
-    "directories": {
-        "doc": "docs"
-    },
     "scripts": {
+        "build": "webpack --mode production",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Dioscelestial/Course-of-AcademiaX.git"
     },
-    "author": "Jason Barcelo Ortiz",
+    "author": "Jason Barcelo",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/Dioscelestial/Course-of-AcademiaX/issues"
     },
     "homepage": "https://github.com/Dioscelestial/Course-of-AcademiaX#readme",
     "dependencies": {
+        "eins-modal": "^2.2.2",
         "normalize.css": "^8.0.1"
+    },
+    "devDependencies": {
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.7.1",
+        "css-minimizer-webpack-plugin": "^3.4.1",
+        "html-loader": "^3.1.0",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.6.0",
+        "terser-webpack-plugin": "^5.3.1",
+        "webpack": "^5.70.0",
+        "webpack-cli": "^4.9.2"
     }
 }
