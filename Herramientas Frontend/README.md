@@ -109,3 +109,49 @@ Para cargar las librerias de Js, instalamos la libreria de por ejemplo de la sig
 
 
 ### Webpack
+
+Es una herramienta para 
+
+### Netlify
+
+Para ser muy técnicos:
+
+- Los dominios se compran a través de registradores de dominios como GoDaddy.
+- Los registradores de dominio mantienen los registros de nombres del servidor como academia-x.com
+- Los servidores de nombres guardan registros DNS.
+- Los registros DNS indican a los navegadores web y a los clientes de correo electrónico dónde dirigir la consulta.
+
+Hay muchísimos registradores de dominios como GoDaddy con precios muy variables. Aquí hay otras opciones:
+
+https://www.websitetooltester.com/es/blog/dominios-baratos/
+
+#### Pipelines
+
+Recuerda que todos estos servicios han sido creados por personas y empresas y van a haber muchísimas más opciones que suelen realizar funciones similares y a veces tratan de realizar más de una función. Por ejemplo, GitHub Pages es parte de GitHub y tiene sus propios pipelines.
+
+### Que sigue despues?
+
+
+Felicidades por haber completado este mini curso de Herramientas Frontend! 🎉 
+
+Hemos cubierto muchísimo y ahora ya puedes llevar a tus proyectos a otro nivel con estas herramientas. 🙌🏽
+
+Qué se viene después de esto?
+
+Mi recomendación después de este curso es que crees varios proyectos que puedes incluir en tu portafolio. Aquí te dejo algunas ideas:
+
+1. Una calculadora con HTML, CSS, y JavaScript
+
+2. Una galería de fotos con React
+
+3. Un pequeño videojuego con Phaser
+
+4. Un par de páginas web para el negocio de amigos o un familiar
+
+Después de ganar más experiencia con esto proyectos y tener tu portafolio listo, puedes preparar tu hoja de vida y empezar a aplicar a trabajos que pidan las tecnologías que has aprendido. Prepárate muy bien estudiando y revisando otros recursos en línea.
+
+Este no es un curso exhaustivo así que puedes aprender más revisando la documentación oficial y ganando experiencia en proyectos profesionales. Cada proyecto es único y traerá nuevos retos! No tienes que memorizar todo y ya tienes los recursos para investigar cuando tengas dudas. También tienes acceso continuo a estos videos y puedes regresar a verlos en el futuro. Este es un CURSO VIVO así que tendrá actualizaciones a lo largo del tiempo.
+
+Para crear aplicaciones web te recomiendo aprender frameworks como React, Angular, Svelte, o Vue.js. Si no estás registrad@ todavía, el siguiente paso es tomar el curso de React en el que aprenderás a crear aplicaciones para la web.
+
+Espero verte en el siguiente curso y gracias por ser parte de Academia X! 🙂💯
