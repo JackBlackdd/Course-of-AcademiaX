@@ -2,7 +2,7 @@ header {
     padding: 5rem 0 3rem;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(var(--black), var(--black2))
+    background: linear-gradient(var(--black), var(--black2));
 }
 
 header video {
