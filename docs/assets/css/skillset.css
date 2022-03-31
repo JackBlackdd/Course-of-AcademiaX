@@ -47,7 +47,7 @@
     border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 502px) {
     #skillset>div {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
