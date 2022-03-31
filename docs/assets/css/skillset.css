@@ -46,3 +46,12 @@
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
 }
+
+@media (max-width: 500px) {
+    #skillset>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        margin: rem;
+    }
+}
