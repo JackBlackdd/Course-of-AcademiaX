@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        // la llave key debe ser única
+        function Series(props) {
+            const lista = ['Silicon Valley', 'Mr. Robot', 'Black Mirror'];
+            return <ul>{lista.map(serie => <li>{serie}</li>)}</ul>;
+        }
+        ReactDOM.render(<Series />, document.getElementById('root'));
+
+    </script>
+</body>
+
+</html>

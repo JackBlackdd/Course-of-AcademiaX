@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        function NumeroInput(props) {
+            return (
+                <div>
+                    <h1>{props.titulo}</h1>
+                    <input value={props.value} onChange={props.onChange} />
+                </div>
+            );
+        }
+
+        function Seccion(props) {
+
+            const [operacion, setOperacion] = React.useState('5%');
+            const [valor, setValor] = React.useState(0);
+
+            const onCinco = e => {
+                setOperacion('5%');
+                setValor(e.target.value);
+            }
+            const onQuince = e => {
+                setOperacion('15%');
+                setValor(e.target.value);
+            }
+
+            const cinco = operacion === '5%' ? valor : valor / 3;
+            const quince = operacion === '15%' ? valor : valor * 3;
+
+            return (
+                <div>
+                    <NumeroInput titulo="5%" value={cinco} onChange={onCinco} />
+                    <NumeroInput titulo="15%" value={quince} onChange={onQuince} />
+                    {
+                        <p>Ultimo Input: {operacion}</p>
+                    }
+                </div>
+            );
+        }
+
+        ReactDOM.render(<Seccion />, document.getElementById('root'));
+    </script>
+</body>
+
+</html>

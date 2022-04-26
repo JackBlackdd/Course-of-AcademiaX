@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+
+        function Contador(props) {
+
+            const [contar, setContar] = useSetInterval('Clicks');
+
+            const [contar2, setContar2] = useSetInterval('Clicks2');
+
+            return (
+                <div>
+                    <h1>{contar}</h1>
+                    <button onClick={() => setContar(contar + 1)}>Click!</button>
+                </div>
+            );
+        }
+
+        function useSetInterval(mensaje) {
+            const [contar, setContar] = React.useState(0);
+
+            React.useEffect(() => {
+                const id = setInterval(() => {
+                    console.log(mensaje + ' : ' + contar);
+                }, 2000);
+                return () => {
+                    clearInterval(id);
+                };
+            }, [contar]);
+
+            return [contar, setContar];
+        }
+
+
+        ReactDOM.render(<Contador />, document.getElementById('root'));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+    "name": "01-primeros-pasos",
+    "version": "1.0.0",
+    "description": "Utilizar componentes para reutilizar codigo en la pagina",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

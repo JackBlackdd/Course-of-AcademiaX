@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const usuario = { nombre: 'Jason', apellidos: 'Barceló Ortiz' }; function nombreCompleto(usuario) { return usuario.nombre + ' ' + usuario.apellidos; } const h1 =
+        <h1 className={usuario.apellidos}>Hello {nombreCompleto(usuario)}</h1>; ReactDOM.render(h1, document.getElementById('root'));
+    </script>
+</body>
+
+</html>

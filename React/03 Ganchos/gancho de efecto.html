@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        function Contador(props) {
+            const [contar, setContar] = React.useState(0);
+
+            // 1 similar a componentDidMount + componentDidUpdate
+            React.useEffect(() => {
+                document.title = `Diste un click ${contar} veces`;
+            });
+
+            // 2 puede ser utilizado muchas veces
+            React.useEffect(() => {
+                console.log('Usar Efecto');
+            });
+
+            // 3 análogo a componentDidMount
+            React.useEffect(() => {
+                // se puede usar para hacer fetch inicial
+                console.log('Usar Efecto');
+            }, []);
+
+            // 4 análogo a componentDidUpdate
+            React.useEffect(() => {
+                // solo cambia con cambios en 'contar'
+                console.log('Usar Efecto');
+            }, [contar]);
+
+            // 5 análogo componentDidUnmount
+            React.useEffect(() => {
+                // lógica relacionada en el mismo lugar
+                const id = setInterval(() => {
+                    console.log('message');
+                }, 2000);
+                return () => {
+                    clearInterval(id);
+                };
+            },[]);
+
+            return (
+                <div>
+                    <h1>{contar}</h1>
+                    <button onClick={() => setContar(contar + 1)}>Click!</button>
+                </div>
+            );
+        }
+
+
+        ReactDOM.render(<Contador />, document.getElementById('root'));
+
+    </script>
+</body>
+
+</html>

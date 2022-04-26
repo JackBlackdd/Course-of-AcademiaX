@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // function Bienvenido(props) {
+      //   return <h1>Bienvenido! {props.nombre}</h1>;
+      // }
+
+      // Un compomente en forma de clase
+      class Bienvenido extends React.Component {
+        render() {
+          return <h1>Bienvenido! {this.props.nombre}</h1>;
+        }
+      } 
+      ReactDOM.render(<Bienvenido nombre="Charly" />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
