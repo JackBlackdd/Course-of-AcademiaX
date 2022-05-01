@@ -2,6 +2,8 @@
 
 ## React
 
+React es una librería de JavaScript declarativa, eficiente y flexible para construir interfaces de usuario. Permite componer IUs complejas de pequeñas y aisladas piezas de código llamadas “componentes”.
+
 En este curso utilizaremos react, Una libreria la cual sirve para renderizar y crear componentes para automatizar codigo en nuestra pagina como etiquetas de HTML las cuales podemos escribirlas una vez e invocarlas cuantas veces necesitemos.
 
 React es una libreria que reacciona muy bien a cambios, por lo que si hay cambios en los datos
