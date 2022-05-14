@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router";
 import "./App.css";
 import Layout from "./componentes/compartidos/Layout";
 import Modal from "./componentes/compartidos/Modal";

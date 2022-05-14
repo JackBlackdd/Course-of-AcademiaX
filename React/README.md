@@ -29,3 +29,15 @@ https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
 Documentación oficial de React Router:
 
 https://reactrouter.com/
+
+### Local Storage
+
+Detalles sobre el web API Local Storage:
+
+https://developer.mozilla.org/es/docs/Web/API/Window/localStorage
+
+### Depuracion
+
+Una herramienta útil para depurar proyectos en React es la extensión React Developer Tools que está disponible para Chrome, Firefox y MS Edge, y permite ver cada componente en el inspector.
+
+https://reactjs.org/blog/2015/09/02/new-react-developer-tools.html

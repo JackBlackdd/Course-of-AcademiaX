@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import estilos from "./Meta.module.css";
-import "../../App.css";
 
-function Meta({id, icono, eventos, periodo, detalles, completado, meta}) {
+function Meta({ id, icono, eventos, periodo, detalles, completado, meta }) {
   return (
     <Link to={`/lista/${id}`} className={estilos.meta + " tarjeta"}>
       <div className="flex items-center">
@@ -20,9 +19,7 @@ function Meta({id, icono, eventos, periodo, detalles, completado, meta}) {
           </p>
           <div className={estilos.barra1}>
             <div
-              style={{
-                width: `${Math.round((completado / meta) * 100)}%`,
-              }}
+              style={{ width: `${Math.round((completado / meta) * 100)}%` }}
               className={estilos.barra2}
             ></div>
           </div>
@@ -32,5 +29,4 @@ function Meta({id, icono, eventos, periodo, detalles, completado, meta}) {
     </Link>
   );
 }
-
 export default Meta;

@@ -1,39 +1,60 @@
 import { useEffect, useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Contexto } from "../../servicios/Memoria";
+import { actualizarMeta, crearMeta, borrarMeta } from "../../servicios/Pedidos";
 import estilos from "./Detalles.module.css";
-
 function Detalles() {
+  const { id } = useParams();
+
   const [form, setForm] = useState({
     detalles: "",
-    eventos: "10",
-    periodo: "Día",
-    icono: "🏃",
-    meta: "365",
-    plazo: "2022-05-10",
-    completado: "5",
+    eventos: 1,
+    periodo: "semana",
+    icono: "🏃‍♂️",
+    meta: 1,
+    plazo: "2030-01-01",
+    completado: 0,
   });
 
   const [estado, enviar] = useContext(Contexto);
-
-  const { detalles, periodo, eventos, icono, meta, plazo, completado } = form;
+  const { detalles, eventos, periodo, icono, meta, plazo, completado } = form;
 
   const onChange = (event, prop) => {
     setForm((estado) => ({ ...estado, [prop]: event.target.value }));
   };
-  // useEffect(() => {
-   // console.log(form);
-  // }, [form]);
 
+  const metaMemoria = estado.objetos[id];
   const navegar = useNavigate();
 
+  useEffect(() => {
+    if (!id) return;
+    if (!metaMemoria) {
+      return navegar("/404");
+    }
+    setForm(metaMemoria);
+  }, [id, metaMemoria, navegar]);
+
   const crear = async () => {
-    enviar({ tipo: "crear", meta: form });
+    const nuevaMeta = await crearMeta(form);
+    enviar({ tipo: "crear", meta: nuevaMeta });
+    navegar("/lista");
+  };
+  const actualizar = async () => {
+    const metaActualizada = await actualizarMeta(form);
+    enviar({ tipo: "actualizar", meta: metaActualizada });
+    navegar("/lista");
+  };
+  const borrar = async () => {
+    await borrarMeta(form.id);
+    enviar({ tipo: "borrar", id: form.id });
     navegar("/lista");
   };
 
-  const frecuencia = ["dia", "semana", "mes", "año"];
-  const emoji = ["🏃", "🍳", "📓", "🖥️", "✈️", "🪙"];
+  const cancelar = () => {
+    navegar("/lista");
+  };
+  const frecuencias = ["día", "semana", "mes", "año"];
+  const iconos = ["🏃", "🍳", "📓", "📚" ,"🖥️", "✈️", "🪙"];
   return (
     <div className="tarjeta">
       <form className="p-4">
@@ -44,15 +65,15 @@ function Detalles() {
             placeholder="ej. 52 caminatas"
             value={detalles}
             onChange={(e) => onChange(e, "detalles")}
-          ></input>
+          />
         </label>
         <label className="label">
           ¿Con que frecuencia deseas cumplir tu meta?{" "}
           <span>(ej. 1 vez a la semana)</span>
           <div className="flex mb-6">
             <input
-              className="input mr-6"
               type="number"
+              className="input mr-6"
               value={eventos}
               onChange={(e) => onChange(e, "eventos")}
             />
@@ -61,57 +82,75 @@ function Detalles() {
               value={periodo}
               onChange={(e) => onChange(e, "periodo")}
             >
-              {frecuencia.map((opcion) => (
-                <option value={opcion}>{opcion}</option>
+              {frecuencias.map((opcion) => (
+                <option key={opcion} value={opcion}>
+                  {opcion}
+                </option>
               ))}
             </select>
           </div>
         </label>
         <label className="label">
-          ¿Cuantás veces deseas completar esta meta?
+          ¿Cuantas veces deseas completar esta meta?
           <input
-            className="input"
             type="number"
+            className="input"
             value={meta}
             onChange={(e) => onChange(e, "meta")}
           />
         </label>
         <label className="label">
-          ¿Tienes una fecha limite?
+          ¿Tienes una fecha límite?
           <input
-            className="input"
             type="date"
+            className="input"
             value={plazo}
             onChange={(e) => onChange(e, "plazo")}
           />
         </label>
         <label className="label">
-          ¿Cuantás veces haz completado ya esta meta?
+          ¿Cuantas veces haz completado ya esta meta?
           <input
-            className="input"
             type="number"
+            className="input"
             value={completado}
             onChange={(e) => onChange(e, "completado")}
           />
         </label>
         <label className="label">
-          Escoge un icono para la meta
+          Escoge el icono para la meta
           <select
             className="input"
             value={icono}
             onChange={(e) => onChange(e, "icono")}
           >
-            {emoji.map((opcion) => (
-              <option value={opcion}>{opcion}</option>
+            {iconos.map((opcion) => (
+              <option key={opcion} value={opcion}>
+                {opcion}
+              </option>
             ))}
           </select>
         </label>
       </form>
       <div className={estilos.botones}>
-        <button className="boton boton--negro" onClick={crear}>
-          Crear
+        {!id && (
+          <button className="boton boton--negro" onClick={crear}>
+            Crear
+          </button>
+        )}
+        {id && (
+          <button className="boton boton--negro" onClick={actualizar}>
+            Actualizar
+          </button>
+        )}
+        {id && (
+          <button className="boton boton--rojo" onClick={borrar}>
+            Borrar
+          </button>
+        )}
+        <button className="boton boton--gris" onClick={cancelar}>
+          Cancelar
         </button>
-        <button className="boton boton--gris">Cancelar</button>
       </div>
     </div>
   );
