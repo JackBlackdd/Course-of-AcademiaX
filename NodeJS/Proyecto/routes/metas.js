@@ -83,7 +83,8 @@ router.put("/:id",
     
     const body = req.body;
     const id = req.params.id;
-    if (body.id != id) {
+    console.log(body.id !==  +id);
+    if (body.id !==  +id) {
       return res.sendStatus(409);
     }
     pedir("metas", id, (err, meta) => {
