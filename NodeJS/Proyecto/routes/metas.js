@@ -91,9 +91,9 @@ router.put("/:id",
       if (err) {
         return next(err);
       }
-      // if (!meta.lenght) {
-      //   return res.sendStatus(404);
-      // }
+      if (!meta.length) {
+        return res.sendStatus(404);
+      }
       actualizar("metas", body, id, (err, actualizada) => {
         if (err) {
           return next(err);
