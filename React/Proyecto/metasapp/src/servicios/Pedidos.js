@@ -1,18 +1,18 @@
 export async function pedirMetas() {
-  const response = await fetch("/metas.json");
+  const response = await fetch("/api/metas");
   const metas = await response.json();
   return metas;
 }
 export async function pedirMeta(id) {
-  const response = await fetch(`/meta.json/${id}`);
-  // const response = await fetch(`/api/metas/${id}`);
+  // const response = await fetch(`/meta.json/${id}`);
+  const response = await fetch(`/api/metas/${id}`);
   const meta = await response.json();
   return meta;
 }
 
 export async function crearMeta(meta) {
-  const response = await fetch("/meta.json", {
-    // const response = await fetch("/api/metas", {
+  // const response = await fetch("/meta.json", {
+    const response = await fetch("/api/metas", {
     method: "POST",
     body: JSON.stringify(meta),
     headers: {
@@ -26,7 +26,7 @@ export async function crearMeta(meta) {
 
 export async function actualizarMeta(meta) {
   // const response = await fetch("");
-  const response = await fetch(`/meta.json/${meta.id}`, {
+  const response = await fetch(`/api/metas/${meta.id}`, {
     method: "PUT",
     body: JSON.stringify(meta),
     headers: {
@@ -38,12 +38,12 @@ export async function actualizarMeta(meta) {
   return metaActualizada;
 }
 
-export async function borrarMeta() {
-  const response = await fetch("/meta.json");
-  const metaBorrada = await response.json();
-  // await fetch(`/api/metas/${id}`, {
-  //   method: "DELETE",
-  // });
-  console.log("Meta borrada!", metaBorrada.id);
-  return metaBorrada.id;
+export async function borrarMeta(id) {
+  // const response = await fetch("/meta.json");
+  // const metaBorrada = await response.json();
+  await fetch(`/api/metas/${id}`, {
+    method: "DELETE"
+  });
+  console.log("Meta borrada!", id);
+  // return metaBorrada.id;
 }
