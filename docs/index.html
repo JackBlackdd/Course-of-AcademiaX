@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Jason Fernely Barceló Ortiz</title>
@@ -19,7 +18,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200&family=Montserrat&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200&family=Montserrat&display=swap"
+    />
     <!-- Ya no usamos estos links de abajo ya que ahora podemos usar webpack y juntar todo en un index.css -->
     <!-- <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css//experience.css" />
@@ -31,24 +33,29 @@
     <link rel="stylesheet" href="assets/css//sections.css" />
     <link rel="stylesheet" href="assets/css//skillset.css" />
     <link rel="stylesheet" href="assets/css//utils.css" /> -->
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="circle" src="assets/img/logos/large.png" alt="large logo" />
-        <h1>Jason Fernely Barceló Ortiz</h1>
-        <hr />
-        <h2>Fullstack Software Engineer</h2>
-        <video autoplay loop muted>
+      <img class="circle" src="assets/img/logos/large.png" alt="large logo" />
+      <h1>Jason Fernely Barceló Ortiz</h1>
+      <hr />
+      <h2>Fullstack Software Engineer</h2>
+      <video autoplay loop muted>
         <source src="assets/video/hero.mp4" />
       </video>
     </header>
     <!-- NavBar -->
     <nav id="navbar" class="navbar-fixed">
-        <div>
-            <a href="/">
-                <img class="circle" src="assets/img/logos/small.png" alt="small logo" />
-                <span>Jason Fernely Barceló Ortiz <small>Software Engineer</small></span
+      <div>
+        <a href="/">
+          <img
+            class="circle"
+            src="assets/img/logos/small.png"
+            alt="small logo"
+          />
+          <span
+            >Jason Fernely Barceló Ortiz <small>Software Engineer</small></span
           >
         </a>
         <button id="hamburger">☰</button>
@@ -78,83 +85,101 @@
           <div>
             <img src="assets/img/skillset/html.svg" alt="Html Logo" />
             <span class="tooltip">HTML</span>
-        </div>
-        <div>
+          </div>
+          <div>
             <img src="assets/img/skillset/css.svg" alt="css Logo" />
             <span class="tooltip">CCS</span>
-        </div>
-        <div>
+          </div>
+          <div>
             <img src="assets/img/skillset/js.svg" alt="js Logo" />
             <span class="tooltip">JavaScript</span>
-        </div>
-        <div>
+          </div>
+          <div>
             <img src="assets/img/skillset/bash.svg" alt="Bash Logo" />
             <span class="tooltip">Bash</span>
-        </div>
-        <div>
+          </div>
+          <div>
             <img src="assets/img/skillset/git.svg" alt="Git Logo" />
             <span class="tooltip">Git</span>
-        </div>
-        <div>
+          </div>
+          <div>
             <img src="assets/img/skillset/webpack.svg" alt="webpack Logo" />
             <span class="tooltip">Webpack</span>
-        </div>
-        <div>
+          </div>
+          <div>
             <img src="assets/img/skillset/node.svg" alt="Node Logo" />
             <span class="tooltip">Node</span>
-        </div>
-        <div>
+          </div>
+          <div>
             <img src="assets/img/skillset/netlify.svg" alt="Netlify Logo" />
             <span class="tooltip">Netlify</span>
+          </div>
         </div>
+      </section>
+      <section id="experience">
+        <h3>Experience</h3>
+        <hr />
+        <div>
+          <a data-modal-id="myModal">
+            <img src="assets/img/experience/1.svg" alt="Academia X" />
+            <h4>&copy;AcademiaX Certified "Fullstack Developer"</h4>
+          </a>
         </div>
-        </section>
-        <section id="experience">
-            <h3>Experience</h3>
-            <hr />
-            <div>
-                <a data-modal-id="myModal">
-                    <img src="assets/img/experience/1.svg" alt="Academia X" />
-                    <h4>&copy;AcademiaX Certified "Fullstack Developer"</h4>
-                </a>
-            </div>
-            <div>
-                <a data-modal-id="myModal">
-                    <img src="assets/img/experience/2.svg" alt="Certificate Azure z900" />
-                    <h4>&copy;Microsoft Certified "Azure Fundamentals"</h4>
-                </a>
-            </div>
-        </section>
-        </main>
-        <section id="contact" class="even">
-            <h3>Contact</h3>
-            <hr />
-            <form action="https://formspree.io/f/xqknbvnr" method="POST">
-                <label>
+        <div>
+          <a data-modal-id="myModal">
+            <img
+              src="assets/img/experience/2.svg"
+              alt="Certificate Azure z900"
+            />
+            <h4>&copy;Microsoft Certified "Azure Fundamentals"</h4>
+          </a>
+        </div>
+      </section>
+    </main>
+    <section id="contact" class="even">
+      <h3>Contact</h3>
+      <hr />
+      <form action="https://formspree.io/f/xqknbvnr" method="POST">
+        <label>
           Your email:
           <input type="email" name="email" />
         </label>
-                <label>
+        <label>
           Your message:
           <textarea name="message"></textarea>
         </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
-            <nav id="social-media">
-                <a href="https://www.linkedin.com/in/jason-barcel%C3%B3-ortiz-049a141b6">
-                    <img id="linkedin" src="assets/img/social/linkedin.png" alt="Linked Logo" />
-                </a>
-                <a href="https://github.com/Dioscelestial">
-                    <img id="github" src="assets/img/social/github.png" alt="github Logo" />
-                </a>
-                <a href="https://www.youtube.com/channel/UC0B_WuvJkblVWKQWSkiyelw">
-                    <img id="youtube" src="assets/img/social/youtube.png" alt="youtube Logo" />
-                </a>
-            </nav>
-        </section>
-        <footer>
-            <small>Developed and designed by Jason Barceló Ortiz student of Academia X
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
+      <nav id="social-media">
+        <a
+          href="https://www.linkedin.com/in/jason-barcel%C3%B3-ortiz-049a141b6"
+        >
+          <img
+            id="linkedin"
+            src="assets/img/social/linkedin.png"
+            alt="Linked Logo"
+          />
+        </a>
+        <a href="https://github.com/Dioscelestial">
+          <img
+            id="github"
+            src="assets/img/social/github.png"
+            alt="github Logo"
+          />
+        </a>
+        <a href="https://www.youtube.com/channel/UC0B_WuvJkblVWKQWSkiyelw">
+          <img
+            id="youtube"
+            src="assets/img/social/youtube.png"
+            alt="youtube Logo"
+          />
+        </a>
+      </nav>
+    </section>
+    <footer>
+      <small
+        >Developed and designed by Jason Barceló Ortiz student of Academia X
         &copy;2021. All rights reserved;</small
       >
     </footer>
