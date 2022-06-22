@@ -35,7 +35,9 @@ function crear(tabla, item, callback) {
 }
 function actualizar(tabla, id, item, callback) {
   const keys = Object.keys(item);
-  const actualizaciones = keys.map((key) => `${key} = '${item[key]}'`).join(", ");
+  const actualizaciones = keys
+    .map((key) => `${key} = '${item[key]}'`)
+    .join(", ");
 
   const sql = `UPDATE ${tabla} SET ${actualizaciones} WHERE id = ${id} returning *`;
   db.any(sql)
@@ -46,9 +48,19 @@ function actualizar(tabla, id, item, callback) {
       callback(error);
     });
 }
+function borrar(tabla, id, callback) {
+  db.any(`DELETE FROM ${tabla} WHERE id = ${id}`)
+    .then(() => {
+      callback(null);
+    })
+    .catch((error) => {
+      callback(error);
+    });
+}
 module.exports = {
   pedirTodas,
   pedir,
   crear,
   actualizar,
+  borrar,
 };

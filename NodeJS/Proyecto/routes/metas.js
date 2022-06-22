@@ -1,5 +1,11 @@
 var express = require("express");
-const { pedirTodas, pedir, crear, actualizar } = require("../db/pedidos");
+const {
+  pedirTodas,
+  pedir,
+  crear,
+  actualizar,
+  borrar,
+} = require("../db/pedidos");
 const { body, validationResult } = require("express-validator");
 var router = express.Router();
 
@@ -72,7 +78,8 @@ router.post(
   }
 );
 
-router.put("/:id",
+router.put(
+  "/:id",
   body("detalles").isLength({ min: 5 }),
   body("periodo").not().isEmpty(),
   function (req, res, next) {
@@ -80,11 +87,11 @@ router.put("/:id",
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-    
+
     const body = req.body;
     const id = req.params.id;
-    console.log(body.id !==  +id);
-    if (body.id !==  +id) {
+    console.log(body.id !== +id);
+    if (body.id !== +id) {
       return res.sendStatus(409);
     }
     pedir("metas", id, (err, meta) => {
@@ -98,21 +105,26 @@ router.put("/:id",
         if (err) {
           return next(err);
         }
-        console.log(actualizada)
+        console.log(actualizada);
         res.send(actualizada);
       });
-      
     });
   }
 );
 
 router.delete("/:id", function (req, res, next) {
   const id = req.params.id;
-  const indice = metas.findIndex((item) => item.id === id);
-  if (indice === -1) {
-    return res.sendStatus(404);
-  }
-  metas.splice(indice, 1);
-  res.sendStatus(204);
+  pedir("metas", id, (err, meta) => {
+    if (err) {
+      res.status(err);
+    }
+    if (!meta.length) {
+      res.sendStatus(404);
+    }
+    borrar("metas", id, (err) => {
+      if (err) next(err);
+    });
+    res.sendStatus(204);
+  });
 });
 module.exports = router;

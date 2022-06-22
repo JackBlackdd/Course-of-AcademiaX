@@ -27,3 +27,17 @@ Ten en cuenta que este vínculo siempre apunta a la última versión de Node.js 
 https://nodejs.org/docs/latest-v14.x/api/globals.html
 
 ### Resets
+
+### Recursos
+
+Hemos visto los fundamentos de Node.js y como sabes, la tecnología está en constante evolución así que mantente al día con estos recursos oficiales:
+
+Español: https://nodejs.org/es/docs/
+
+Inglés: https://nodejs.org/en/docs/
+
+ 
+
+El framework de Express:
+
+https://expressjs.com/
