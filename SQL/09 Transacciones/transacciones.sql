@@ -16,7 +16,7 @@ CREATE TABLE metas (
   detalles text NOT NULL,
   plazo plazo NOT NULL,
   frecuencia int NOT NULL,
-  ícono text,
+  icono text,
   meta int,
   fecha_límite timestamptz
 );
