@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer } from 'react';
 
 // const memoria = localStorage.getItem('metas');
 const estadoInicial = {
@@ -12,7 +12,7 @@ const estadoInicial = {
 
 function reductor(estado, accion) {
   switch (accion.tipo) {
-    case "colocar": {
+    case 'colocar': {
       console.log(accion);
       const metas = accion.metas;
       const nuevoEstado = {
@@ -25,7 +25,7 @@ function reductor(estado, accion) {
       // localStorage.setItem("metas", JSON.stringify(nuevoEstado));
       return nuevoEstado;
     }
-    case "crear": {
+    case 'crear': {
       const id = accion.meta.id; // String(Math.random());
       const nuevoEstado = {
         orden: [...estado.orden, id],
@@ -37,7 +37,7 @@ function reductor(estado, accion) {
       // localStorage.setItem("metas", JSON.stringify(nuevoEstado));
       return nuevoEstado;
     }
-    case "actualizar": {
+    case 'actualizar': {
       const id = accion.meta.id;
       estado.objetos[id] = {
         ...estado.objetos[id],
@@ -47,7 +47,7 @@ function reductor(estado, accion) {
       // localStorage.setItem("metas", JSON.stringify(nuevoEstado));
       return nuevoEstado;
     }
-    case "borrar": {
+    case 'borrar': {
       const id = accion.id;
       const nuevoOrden = estado.orden.filter((item) => item.id !== id);
       delete estado.objetos[id];

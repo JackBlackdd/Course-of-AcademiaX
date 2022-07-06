@@ -1,18 +1,18 @@
-import { useEffect, useState, useContext } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import { Contexto } from "../../servicios/Memoria";
-import { actualizarMeta, crearMeta, borrarMeta } from "../../servicios/Pedidos";
-import estilos from "./Detalles.module.css";
+import { useEffect, useState, useContext } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import { Contexto } from '../../servicios/Memoria';
+import { actualizarMeta, crearMeta, borrarMeta } from '../../servicios/Pedidos';
+import estilos from './Detalles.module.css';
 function Detalles() {
   const { id } = useParams();
 
   const [form, setForm] = useState({
-    detalles: "",
+    detalles: '',
     eventos: 1,
-    periodo: "semana",
-    icono: "🏃‍♂️",
+    periodo: 'semana',
+    icono: '🏃‍♂️',
     meta: 1,
-    plazo: "2030-01-01",
+    plazo: '2030-01-01',
     completado: 0,
   });
 
@@ -29,32 +29,32 @@ function Detalles() {
   useEffect(() => {
     if (!id) return;
     if (!metaMemoria) {
-      return navegar("/404");
+      return navegar('/404');
     }
     setForm(metaMemoria);
   }, [id, metaMemoria, navegar]);
 
   const crear = async () => {
     const nuevaMeta = await crearMeta(form);
-    enviar({ tipo: "crear", meta: nuevaMeta });
-    navegar("/lista");
+    enviar({ tipo: 'crear', meta: nuevaMeta });
+    navegar('/lista');
   };
   const actualizar = async () => {
     const metaActualizada = await actualizarMeta(form);
-    enviar({ tipo: "actualizar", meta: metaActualizada });
-    navegar("/lista");
+    enviar({ tipo: 'actualizar', meta: metaActualizada });
+    navegar('/lista');
   };
   const borrar = async () => {
     await borrarMeta(form.id);
-    enviar({ tipo: "borrar", id: form.id });
-    navegar("/lista");
+    enviar({ tipo: 'borrar', id: form.id });
+    navegar('/lista');
   };
 
   const cancelar = () => {
-    navegar("/lista");
+    navegar('/lista');
   };
-  const frecuencias = ["día", "semana", "mes", "año"];
-  const iconos = ["🏃", "🍳", "📓", "📚" ,"🖥️", "✈️", "🪙"];
+  const frecuencias = ['día', 'semana', 'mes', 'año'];
+  const iconos = ['🏃', '🍳', '📓', '📚', '🖥️', '✈️', '🪙'];
   return (
     <div className="tarjeta">
       <form className="p-4">
@@ -64,23 +64,23 @@ function Detalles() {
             className="input"
             placeholder="ej. 52 caminatas"
             value={detalles}
-            onChange={(e) => onChange(e, "detalles")}
+            onChange={(e) => onChange(e, 'detalles')}
           />
         </label>
         <label className="label">
-          ¿Con que frecuencia deseas cumplir tu meta?{" "}
+          ¿Con que frecuencia deseas cumplir tu meta?{' '}
           <span>(ej. 1 vez a la semana)</span>
           <div className="flex mb-6">
             <input
               type="number"
               className="input mr-6"
               value={eventos}
-              onChange={(e) => onChange(e, "eventos")}
+              onChange={(e) => onChange(e, 'eventos')}
             />
             <select
               className="input"
               value={periodo}
-              onChange={(e) => onChange(e, "periodo")}
+              onChange={(e) => onChange(e, 'periodo')}
             >
               {frecuencias.map((opcion) => (
                 <option key={opcion} value={opcion}>
@@ -96,7 +96,7 @@ function Detalles() {
             type="number"
             className="input"
             value={meta}
-            onChange={(e) => onChange(e, "meta")}
+            onChange={(e) => onChange(e, 'meta')}
           />
         </label>
         <label className="label">
@@ -105,7 +105,7 @@ function Detalles() {
             type="date"
             className="input"
             value={plazo}
-            onChange={(e) => onChange(e, "plazo")}
+            onChange={(e) => onChange(e, 'plazo')}
           />
         </label>
         <label className="label">
@@ -114,7 +114,7 @@ function Detalles() {
             type="number"
             className="input"
             value={completado}
-            onChange={(e) => onChange(e, "completado")}
+            onChange={(e) => onChange(e, 'completado')}
           />
         </label>
         <label className="label">
@@ -122,7 +122,7 @@ function Detalles() {
           <select
             className="input"
             value={icono}
-            onChange={(e) => onChange(e, "icono")}
+            onChange={(e) => onChange(e, 'icono')}
           >
             {iconos.map((opcion) => (
               <option key={opcion} value={opcion}>

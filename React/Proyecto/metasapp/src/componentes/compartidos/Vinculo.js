@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import estilos from "./Vinculo.module.css";
+import { Link } from 'react-router-dom';
+import estilos from './Vinculo.module.css';
 
 function Vinculo({ Icono, texto, to }) {
   return (

@@ -1,7 +1,7 @@
-import { ReactComponent as LogoSVG } from "../../img/logo.svg";
-import { ReactComponent as NavSVG } from "../../img/nav.svg";
-import Vinculo from "./Vinculo";
-import estilos from "./Encabezado.module.css";
+import { ReactComponent as LogoSVG } from '../../img/logo.svg';
+import { ReactComponent as NavSVG } from '../../img/nav.svg';
+import Vinculo from './Vinculo';
+import estilos from './Encabezado.module.css';
 
 function Encabezamiento() {
   return (

@@ -1,5 +1,5 @@
 function NoEncontrado() {
-    return ( <p>No encontrado</p> );
+  return <p>No encontrado</p>;
 }
 
 export default NoEncontrado;

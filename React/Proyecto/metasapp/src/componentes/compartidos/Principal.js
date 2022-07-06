@@ -1,7 +1,7 @@
-import estilos from "./Principal.module.css";
-import Vinculo from "./Vinculo";
-import { ReactComponent as ListaSVG } from "../../img/Lista.svg";
-import { ReactComponent as NuevaSVG } from "../../img/new.svg";
+import estilos from './Principal.module.css';
+import Vinculo from './Vinculo';
+import { ReactComponent as ListaSVG } from '../../img/Lista.svg';
+import { ReactComponent as NuevaSVG } from '../../img/new.svg';
 function Principal({ children }) {
   return (
     <div className={estilos.principal}>

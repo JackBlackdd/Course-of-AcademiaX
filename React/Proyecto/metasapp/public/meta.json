@@ -1,12 +1,12 @@
 [
-    {
-        "id": "2",
-        "detalles": "Leer 10 libros",
-        "periodo": "Semana",
-        "eventos": "1",
-        "icono": "📖",
-        "meta": "10",
-        "plazo": "2030-01-01",
-        "completado": 0
-    }
+  {
+    "id": "2",
+    "detalles": "Leer 10 libros",
+    "periodo": "Semana",
+    "eventos": "1",
+    "icono": "📖",
+    "meta": "10",
+    "plazo": "2030-01-01",
+    "completado": 0
+  }
 ]
