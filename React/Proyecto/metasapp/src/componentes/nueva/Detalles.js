@@ -45,8 +45,9 @@ function Detalles() {
     navegar('/lista');
   };
   const borrar = async () => {
-    await borrarMeta(form.id);
-    enviar({ tipo: 'borrar', id: form.id });
+    const id = form.id;
+    await borrarMeta(id);
+    enviar({ tipo: 'borrar', id });
     navegar('/lista');
   };
 

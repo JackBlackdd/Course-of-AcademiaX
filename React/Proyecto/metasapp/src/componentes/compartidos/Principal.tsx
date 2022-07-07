@@ -2,7 +2,13 @@ import estilos from './Principal.module.css';
 import Vinculo from './Vinculo';
 import { ReactComponent as ListaSVG } from '../../img/Lista.svg';
 import { ReactComponent as NuevaSVG } from '../../img/new.svg';
-function Principal({ children }) {
+
+interface PrincipalProps {
+  children: React.ReactNode;
+}
+
+
+function Principal({ children }: PrincipalProps) {
   return (
     <div className={estilos.principal}>
       <aside className={estilos.aside}>

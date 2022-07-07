@@ -1,16 +1,18 @@
-export async function pedirMetas() {
+import { MetaTipo } from "../tipos/MetaTipo";
+
+export async function pedirMetas() : Promise<MetaTipo[]> {
   const response = await fetch('/api/metas');
-  const metas = await response.json();
+  const metas: MetaTipo[] = await response.json();
   return metas;
 }
-export async function pedirMeta(id) {
+export async function pedirMeta(id: number) : Promise<MetaTipo> {
   // const response = await fetch(`/meta.json/${id}`);
   const response = await fetch(`/api/metas/${id}`);
-  const meta = await response.json();
+  const meta : MetaTipo = await response.json();
   return meta;
 }
 
-export async function crearMeta(meta) {
+export async function crearMeta(meta: MetaTipo) : Promise<MetaTipo> {
   // const response = await fetch("/meta.json", {
   const response = await fetch('/api/metas', {
     method: 'POST',
@@ -19,12 +21,12 @@ export async function crearMeta(meta) {
       'content-type': 'application/json; charset=UTF-8',
     },
   });
-  const metaCreada = await response.json();
+  const metaCreada: MetaTipo = await response.json();
   console.log('Meta creada!', metaCreada);
   return metaCreada;
 }
 
-export async function actualizarMeta(meta) {
+export async function actualizarMeta(meta: MetaTipo) : Promise<MetaTipo> {
   // const response = await fetch("");
   const response = await fetch(`/api/metas/${meta.id}`, {
     method: 'PUT',
@@ -33,17 +35,14 @@ export async function actualizarMeta(meta) {
       'content-type': 'application/json; charset=UTF-8',
     },
   });
-  const metaActualizada = await response.json();
+  const metaActualizada: MetaTipo = await response.json();
   console.log('Meta actualizada!', metaActualizada);
   return metaActualizada;
 }
 
-export async function borrarMeta(id) {
-  // const response = await fetch("/meta.json");
-  // const metaBorrada = await response.json();
+export async function borrarMeta(id: number) : Promise<void> {
   await fetch(`/api/metas/${id}`, {
     method: 'DELETE',
   });
-  console.log('Meta borrada!', id);
-  // return metaBorrada.id;
+  console.log('Meta Borrada!', id);
 }
